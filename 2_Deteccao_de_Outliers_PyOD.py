@@ -16,9 +16,9 @@ outliers = []
 for i in range(len(predict)):
     if predict[i] == 1:
         outliers.append(i)
-lista_outliers = credit_data.iloc[outliers, :]
+list_outliers = credit_data.iloc[outliers, :]
 
 print(f'Outliers amount: {outliers_amount}')
 print(f'Predict confidence: {predict_confidence}')
 print(f'Outliers Id: {outliers}')
-print(lista_outliers)
+print(f'\nlist of possible Outliers:\n{list_outliers}')
